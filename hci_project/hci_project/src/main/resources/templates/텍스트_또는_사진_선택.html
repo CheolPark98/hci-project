@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Selection</title>
+  <link rel="stylesheet" th:href="@{/css/텍스트%20또는%20사진%20선택%20styles.css}"> <!-- 타임리프 경로 설정 -->
+  <!-- <link rel="stylesheet" href="/static/css/텍스트%20또는%20사진%20선택%20styles.css"> --> <!-- 일반 경로 -->
+</head>
+<body>
+<div class="container">
+  <h1>Choose an Option</h1>
+  <div class="button-container">
+    <a href="/text_analyze"><button id="button1">Text</button></a> <!-- 경로 수정 -->
+    <a href="/picture_analyze"><button id="button2">Picture</button></a> <!-- 경로 수정 -->
+  </div>
+  <div id="resultContainer"></div>
+</div>
+<script th:src="@{/js/텍스트%20또는%20사진%20선택script.js}"></script> <!-- 타임리프 경로 설정 -->
+<!-- <script src="/static/js/텍스트%20또는%20사진%20선택script.js"></script> --> <!-- 일반 경로 -->
+</body>
+</html>

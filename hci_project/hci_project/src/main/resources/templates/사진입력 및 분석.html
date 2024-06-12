@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image to Text Analysis</title>
+  <link rel="stylesheet" th:href="@{/css/사진입력%20및%20분석%20styles.css}"> <!-- 타임리프 경로 설정 -->
+</head>
+<body>
+<div class="container">
+  <h1>Image to Text Analysis</h1>
+  <input type="file" id="imageInput" accept="image/*">
+  <button id="analyzeButton">Upload and Analyze</button>
+  <div id="resultContainer"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
+<script th:src="@{/js/사진입력%20및%20분석%20script.js}"></script> <!-- 타임리프 경로 설정 -->
+</body>
+</html>

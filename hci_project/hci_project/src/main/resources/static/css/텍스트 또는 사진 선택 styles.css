@@ -1,0 +1,49 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('/image/wallpaper_choose_image_or_text.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: #ffffffb4;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 50px;
+    text-align: center;
+    width: 400px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  button {
+    width: 150px;
+    height: 200px;
+
+    border: none;
+    border-radius: 7px;
+    background-color: #ff4b2b;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff3a1f;
+  }
+  
+  #resultContainer {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  

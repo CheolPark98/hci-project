@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotion Recognition</title>
+  <link rel="stylesheet" th:href="@{/css/홈화면_styles.css}"> <!-- 타임리프 사용 시 -->
+  <!-- <link rel="stylesheet" href="/static/css/홈화면_styles.css"> --> <!-- 타임리프 사용 안 할 시 -->
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+  <div class="hero">
+    <h1>Emotion Recognition</h1>
+    <p>Welcome to Our Website</p>
+    <a href="/select"><button>Start</button></a> <!-- 공백 %20으로 인코딩 -->
+  </div>
+</section>
+
+<section id="about">
+  <div class="content">
+    <h2>About Us</h2>
+    <p>We are a team of dedicated professionals committed to helping you achieve your goals.</p>
+  </div>
+</section>
+
+<section id="features">
+  <div class="content">
+    <h2>Features</h2>
+    <p>Analysis of emotions through text</p>
+    <p>Analysis of emotions through image</p>
+    <p>Login and Logout</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="content">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us.</p>
+  </div>
+</section>
+</body>
+</html>
