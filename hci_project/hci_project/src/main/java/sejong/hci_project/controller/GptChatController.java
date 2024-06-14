@@ -16,7 +16,7 @@ public class GptChatController {
 
     private final GptChatService gptChatService;
 
-    @PostMapping("/chat")
+    @PostMapping("/text_analyze")
     @ResponseBody
     public ResponseEntity<ChatResponseDto> getChat(@RequestBody String prompt) {
 

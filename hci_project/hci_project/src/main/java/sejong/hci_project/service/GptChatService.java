@@ -1,5 +1,6 @@
 package sejong.hci_project.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -13,14 +14,20 @@ import java.util.List;
 import java.util.Map;
 
 @Service
+@Slf4j
 public class GptChatService {
 
-    @Value("sk-proj-YFj00w7eKPYiRadQcU1iT3BlbkFJFX2Rhc7w47PexrwqBnz3")
+    @Value("${open.api.key}")
     private String openaiApiKey;
+
+
 
     private static final String OPENAI_URL = "https://api.openai.com/v1/chat/completions";
 
     public String getPromptResult(String prompt) {
+
+
+        log.info("Received prompt: {}", prompt);
         prompt="The user will provide the text, and look at it and analyze the user's emotions. Answer the analyzed user's emotions accurately and comprehensively.\n" +
                 "Please answer within 4 lines"+prompt;
         RestTemplate restTemplate = new RestTemplate();

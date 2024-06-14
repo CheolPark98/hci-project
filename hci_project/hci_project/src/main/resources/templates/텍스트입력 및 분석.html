@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Text Analysis</title>
-  <link rel="stylesheet" th:href="@{/css/텍스트입력%20및%20분석%20styles.css}"> <!-- 공백을 %20으로 인코딩 -->
-
+  <link rel="stylesheet" th:href="@{/css/텍스트입력%20및%20분석%20styles.css}">
 </head>
 <body>
 <div class="container">
   <h1>Text Analysis</h1>
-  <textarea id="inputText" placeholder="Enter some text..."></textarea>
+  <textarea id="prompt" placeholder="Enter some text..."></textarea>
   <button id="analyzeButton">Analyze</button>
-  <div id="resultContainer"></div>
 </div>
-<script src="/static/js/텍스트입력%20및%20분석%20script.js"></script> <!-- 공백을 %20으로 인코딩 -->
+
+<div id="resultModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <p id="resultText"></p>
+  </div>
+</div>
+
+<script th:src="@{/js/text_analyze_script.js}"></script>
 </body>
 </html>
